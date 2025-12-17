@@ -1,14 +1,5 @@
 import React, { useEffect, useState } from "react";
 import AdminHeader from "../components/AdminComponents/AdminHeader";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
 import { useSelector } from "react-redux";
 import { adminDashboardApi } from "../server/allApi";
 import { Link } from "react-router-dom";
@@ -102,29 +93,7 @@ const AdminDashboard = () => {
   
       </div>
   
-      {/* ===================== BOOKING TREND ===================== */}
-      <div className="mx-6 md:mx-10 bg-white rounded-2xl shadow-md border border-gray-200 p-6">
-        <h2 className="text-lg font-semibold text-gray-800 mb-4">
-          Booking Trend (Last 7 Days)
-        </h2>
-  
-        <div className="h-80">
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={data}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="date" />
-              <YAxis />
-              <Tooltip />
-              <Line
-                type="monotone"
-                dataKey="bookings"
-                stroke="#16a34a"
-                strokeWidth={3}
-              />
-            </LineChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
+     
   
       {/* ===================== QUICK ACTIONS ===================== */}
       <div className="mx-6 md:mx-10 mt-10 bg-white rounded-2xl shadow-md border border-gray-200 p-6">

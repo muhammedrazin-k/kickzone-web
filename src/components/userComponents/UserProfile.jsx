@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import UserHeader from "./UserHeader";
 import { useSelector } from "react-redux";
 import SERVER_URL from "../../server/serverURL";
-import { address } from "framer-motion/client";
 import debounce from "lodash.debounce";
 import axios from "axios";
 import { updateProfileApi } from "../../server/allApi";
