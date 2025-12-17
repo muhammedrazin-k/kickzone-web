@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from "react
 const Contact = () => {
     
   return (
-    <div className="bg-gray-100 pt-16 sm:pt-24 min-h-[100vh] font-['figtree']">
+    <div className="bg-gray-100 pt-16 sm:pt-14 min-h-[100vh] font-['figtree']">
     <Header />
   
     <div className="m-6 md:m-10">
