@@ -110,3 +110,7 @@ export const getMyturfbyidAPI=async(id)=>{
 export const deleteTurfApi=async(id)=>{
     return await commonApi('delete',`${SERVER_URL}/owner/deletturf/${id}`,"")
 }
+
+export const PaymentOrderAPi=async(reqbody)=>{
+    return await commonApi('post',`${SERVER_URL}/create-order`,{amount:reqbody})
+}
